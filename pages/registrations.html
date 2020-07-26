@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<title>Registration: </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div>
+      <p><marquee> Disclaimer: This website was made for Educational purpose only.</marquee></p>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="../index.html">Pune Music Festival</a></h1>
+      <p>2020</p>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="../index.html">Home</a></li>
+      
+      <li><a class="inverse" href="#">Registration</a>
+      </li>
+      <li><a href="showreg.html">Show Registrations</a></li>
+        </ul>
+      </li>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('../images/demo/backgrounds/04.jpg');">
+  <section id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Registration</a></li>
+      
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Registrations:</h6>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+
+  <div class="container" style="background-image:url('../images/demo/backgrounds/07.jpg');">
+  
+  <form>
+    <p>Please fill the following form to register yourself for the event:</p>
+    <hr>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="contact"><b>Contact</b></label>
+    <input type="text" placeholder="Enter Contact Number" name="contact" id="contact" required>
+
+
+    <label for="payment"><b>Payment Method</b></label>
+    <select name="payment" id="payment">
+  <optgroup label="Cards">
+    <option value="debit">Debit Card</option>
+    <option value="credit">Credit Card</option>
+  </optgroup>
+  <optgroup label="UPI">
+    <option value="gpay">Google Pay</option>
+    <option value="phonepe">Phone Pe</option>
+  </optgroup>
+</select>
+    <button type="submit" class="registerbtn">Make Payment & Register</button>
+  </div>
+
+</form>
+
+<div class="summary" id="tabless" style="display: none;">
+    <h1>Registrations : </h1>
+     
+    <table id="table" class="table">
+      <tr>
+        <th>Filled on</th>
+        <th>Name</th>
+        <th>Email id</th>
+        <th>Contact No.</th>
+        <th>Payment Mode</th>
+      </tr>
+    </table>
+  
+</div>
+
+
+
+
+
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/table.js"></script>
+</body>
+</html>
