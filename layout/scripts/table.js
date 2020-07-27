@@ -1,11 +1,11 @@
-function regsitrat() {
-  var x = document.getElementById("register");
-  var y = document.getElementById("tabless");
-  var z = document.getElementById("myCarousel");    //to display only form
+function register() {
+  var bg = document.getElementById("imk");
+  var tab = document.getElementById("ta");
+  var fo = document.getElementById("form");    //to display only form
     
-    x.style.display = "block";
-    y.style.display = "none";
-    z.style.display = "none";
+    fo.style.display = "block";
+    bg.style.display = "none";
+    tab.style.display = "none";
 
     
 function regsitrations() {
@@ -110,7 +110,7 @@ function addHtmlTableRow() {                              //if found valid, add 
 
     
     document.getElementById("reg").reset();
-    selectedRowToInput();                                       // call the function to set the event to the new row
+                                         
     document.getElementById("reg").reset();                     //reset form after submission 
 
     

@@ -3,11 +3,13 @@
 <html lang="">
 <head>
 <title>Pune Music Festival 2020</title>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" >
 </head>
 <body id="top">
+  <script src="script.js"></script>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -36,21 +38,92 @@
     
     <!-- ################################################################################################ -->
   </header>
-  <nav id="mainav" class="hoc clear"> 
+  <nav id="mainav" class="hoc clear"><button style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;" onclick="window.location.href='index.html'">Home</button><button style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;" onclick="register()">Register</button><button style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;" onclick="showr()">Show Registrations</button>
     <!-- ################################################################################################ -->
-    <ul class="clear">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a  href="pages/registrations.html">Registration</a>
-      </li>
-      <li><a href="pages/showreg.html">Show Registrations</a></li>
-    </ul>
+    
     <!-- ################################################################################################ -->
   </nav>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/01.jpg');">
+<div id="form" class="container"  style="background-image:url('../images/demo/backgrounds/07.jpg'); display: none; " >
+
+
+
+
+  
+  <form id="forms">
+    <p>Please fill the following form to register yourself for the event:</p>
+    <hr>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="contact"><b>Contact</b></label>
+    <input type="text" placeholder="Enter Contact Number" name="contact" id="contact" required>
+
+
+    <label for="payment"><b>Payment Method</b></label>
+    <select name="payment" id="payment">
+
+    <option value="debit">Debit Card</option>
+    <option value="credit">Credit Card</option>
+ 
+
+    <option value="gpay">Google Pay</option>
+    <option value="phonepe">Phone Pe</option>
+ 
+</select>
+    <button type="button"  onclick="tables()" class="registerbtn">Make Payment & Register</button>
+  
+
+</form>
+
+</div>
+  <div class="summary" id="ta" style="display: none;">
+    <h1>Registrations : </h1>
+     
+    <table id="table" class="table">
+      <tr>
+        <th>Filled on</th>
+        <th>Name</th>
+        <th>Email id</th>
+        <th>Contact No.</th>
+        <th>Payment Mode</th>
+      </tr>
+    </table>
+  
+</div>
+
+
+
+
+<div id="imk" class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/01.jpg');">
   <div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <article>
@@ -61,9 +134,22 @@
     <!-- ################################################################################################ -->
   </div>
 </div>
+
+
+ 
+
+
+
+
+
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+
+
+
 <div class="wrapper row3">
   <main class="hoc container clear"> 
     <!-- main body -->
@@ -240,11 +326,8 @@
 <!-- ################################################################################################ -->
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 
-<!-- JAVASCRIPTS  USED -->
-<script src="layout/scripts/jquery.min.js"></script>
-<script src="layout/scripts/jquery.backtotop.js"></script>
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
-<script src="../layout/scripts/table.js"></script>
+   
+
 
 
 </body>
